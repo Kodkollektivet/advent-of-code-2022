@@ -10,3 +10,15 @@ Folder structure looks like this:
   <LANGUAGE>/<USERNAME>/day3/<FILES>
   ...
 #+END_SRC
+
+
+* How to submit code to this repository
+
+  1. Fork the repository to your own GitHub profile
+  2. Create a new branch for each days solutions in your own repository
+  3. Push your changes to your GitHub repository
+  4. File a Pull Request (PR) from your GitHub repository to Kodkollektivets GitHub repository
+     We will be quick to merge incoming PRs.
+
+
+  If you have any questions hit us up in the Advent of code channel on Discord
