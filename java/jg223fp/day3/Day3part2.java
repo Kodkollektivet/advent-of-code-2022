@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Day3part1 {
+public class Day3part2 {
     
   // create priority map
     private Map<String, Integer> itemPrioritys = new HashMap<String, Integer>() {
@@ -38,15 +38,15 @@ public class Day3part1 {
       while (scan.hasNextLine()){
         try {
 
-          String rucksack = scan.nextLine();
-          String firstCompartment = rucksack.substring(0, rucksack.length() / 2);
-          String secondCompartment = rucksack.substring((rucksack.length() / 2), rucksack.length() );
+          String rucksack1 = scan.nextLine();
+          String rucksack2 = scan.nextLine();
+          String rucksack3 = scan.nextLine();
 
-          for (int i = 0; i < firstCompartment.length(); i++) {
+          for (int i = 0; i < rucksack1.length(); i++) {
 
-            String item = String.valueOf(firstCompartment.charAt(i));
+            String item = String.valueOf(rucksack1.charAt(i));
 
-            if (secondCompartment.indexOf(item) > -1) {
+            if (rucksack2.indexOf(item) > -1 && rucksack3.indexOf(item) > -1  ) {
               prioritySum += todaysObject.getItemPriority(item);
               break;     
             }
